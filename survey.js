@@ -10,17 +10,14 @@ function successButton(){
 
 
 
-	if( name.value === ''|| email.value === ''){
+	if( name.value === ''|| email.value === '' || dropdown.value ===''){
 		msg.classList.add('error');
-		msg.innerHTML="Enter Required Parameters";
-		}if(dropdown.checked === ''){
-			msg.classList.add('error');
 		msg.innerHTML="Enter Required Parameters";
 		}
 		else{
 			alert( `Name: ${name.value} ${newline}
 			Email: ${email.value} ${newline}
-			Gender: ${gender.checked} ${newline}
-			Dropdown: ${dropdown.checked} ${newline}`)
+			Gender: ${gender.value} ${newline}
+			Dropdown: ${dropdown.value} ${newline}`)
 		}
 	}
