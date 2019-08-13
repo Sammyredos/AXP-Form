@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<meta name ="viewport" content="width=device-width,initial-scale=1.0"/>
+<title> Green-Turf </title>
+<html>
+<head>
+	<link rel="stylesheet" href="survey.css">
+	<script src="survey.js"></script>
+</head>
+
+<div>
+	<h1 id="title"> Green-Turf Gardens </h1>
+</div>
+<body>
+<form class="form" action="GreenTurf.html" method="GET">
+	<div>
+		<p style="font-size:18px; font-wight:bold;"> We would like to know what you need for your Garden </p>
+	</div>
+	<div id="tab-align">
+		<div class="label-align">
+			<label for="name"> *Name: 
+			</label>
+		</div>
+		<div class="right-align">
+			<input type="text" class="input-fields" id="name" placeholder="Enter your fullname" required>
+		</div>
+	</div>
+	<div id="tab-align">
+		<div class="label-align">
+			<label for="email"> *E-mail: 
+			</label>
+		</div>
+		<div class="right-align">
+			<input type="email" class="input-fields" id="email" placeholder="Your contact email" required>
+		</div>
+	</div>
+	<div id="tab-align">
+		<div class="label-align">
+			<label for ="measurement"> *Landscape Dimension Size:
+			</label>
+		</div>
+		<div class="right-align">
+			<input type="number" min="1" max="500" class="input-fields" id="landScape" placeholder="Example: 400 Square-feets" required>
+		</div>
+	</div>
+	<div id="tab-align">
+		<div class="label-align">
+			<label for="gender"> Gender: </label>
+		</div>
+		<div class="right-align">
+				<ul  id="gender" style="list-style-type: none;">
+					<li> <label> <input type="radio" name="gender" id="male" value="male" required> Male </label> </li>
+					<li> <label> <input type="radio" name="gender" id="female" value="female" required> Female </label> </li>
+					<li> <label> <input type="radio" name="gender" id="pnts" value="prefe not to say" required> Prefer not to say </label> </li>
+				</ul>
+		</div>
+	</div>
+	<div id="tab-align">
+		<div class="label-align">
+			<label for="specification" > What type of garden would you want?: 
+			</label>
+		</div>
+		<div class="right-align">
+			<select id="dropdown" required>
+				<option disabled selected value for ="length"> Make Selection </option>
+				<option value for = "vegetable" id="vegetable" value="Vegetable Garden"> Vegetable Garden </option>
+				<option value for= "flower" id="flower" value="Flower Garden"> Flower Garden </option>
+				<option value for= "wall" id="wall" value="Wall Garden"> Wall Garden </option>
+				<option value for= "container" id="container" value="Container Garden"> Container Garden </option>
+				<option value for= "kitchen" id="kitchen" value="Kitchen Garden"> Kitchen Garden </option>
+			</select>
+		</div>
+		<div id="tab-align">
+			<div class="label-align">
+				<label for ="check"> Check the pictures of our Outdoor plants, <span> you can have a view <a href="https://www.thespruce.com/outdoor-garden-plants-that-make-great-houseplants-1402009" target="_blank" style="background-color:#8bbabb; padding:2px 2px; border-radius:2px; text-decoration:none;"> here. </a> </span>
+				</label>
+			</div>
+			<div class="right-align">
+				<ul  id="plantSpec" style="list-style-type: none;">
+					<li> <label> <input type="checkbox" name="plant-spec" value="Geraniums (Pelargonium)"> Geraniums (Pelargonium) </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Begonias"> Begonias </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Fuchsia"> Fuchsia </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Abutilon (Flowering Maple)"> Abutilon (Flowering Maple) </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Caladium"> Caladium </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Coleus"> Coleus </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Tropical Hibiscus"> Tropical Hibiscus </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Hot Peppers"> Hot Peppers </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Basil"> Basil </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Rosemary"> Rosemary </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Lemon Grass"> Lemon Grass </label> </li>
+					<li> <label> <input type="checkbox" name="plant-spec" value="Parsley"> Parsley </label> </li>
+				</ul>
+			</div>
+		</div>
+		<div id="tab-align">
+			<p id="demo"> </p>
+			<div class="label-align" id="submit">
+	                    <label for="suggestions" id="comment-text">Any Comments or Suggestions?</label> 
+	        </div>
+	        <div class="right-align">
+	                <textarea id="comment-box" rows="4" cols="50" placeholder="Enter text here..."></textarea>
+	                </textarea> 
+	       </div>
+	    </div>
+	    <div>
+	    	<div class="msg"></div>
+            <button class="btn" onclick="successButton()"> Submit </button>
+        </div>
+
+        <ul id="users"></ul>
+</div>
+</form>
+</body>
+</html>
